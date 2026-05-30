@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Outfit:wght@300;600;800&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #0f1218;
+  color: #e2e8f0;
+  font-family: "Outfit", sans-serif;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.processor-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.top-branding {
+  height: 65px;
+  background: #1a1f29;
+  border-bottom: 2px solid #2d3748;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  justify-content: space-between;
+}
+
+.brand {
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+}
+.brand span { color: #8b5cf6; font-size: 0.7rem; vertical-align: top; }
+
+.status-pill {
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: bold;
+  background: rgba(139, 92, 246, 0.1);
+  border: 1px solid #8b5cf6;
+  color: #8b5cf6;
+}
+
+.clear-btn {
+  background: #dc2626;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-family: "Space Mono";
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.viewport {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.entry-point {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.glass-panel {
+  background: #1a1f29;
+  padding: 50px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 550px;
+  text-align: center;
+  border: 1px solid #334155;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.phase {
+  color: #94a3b8;
+  font-size: 11px;
+  letter-spacing: 3px;
+  display: block;
+}
+
+.input-field-main {
+  width: 100%;
+  padding: 18px;
+  background: #0f1218;
+  border: 2px solid #334155;
+  color: #8b5cf6;
+  font-size: 26px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 25px 0;
+  font-family: "Space Mono";
+}
+
+.primary-action {
+  width: 100%;
+  padding: 16px;
+  background: #8b5cf6;
+  color: white;
+  border: none;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.dim-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin: 20px 0;
+  max-height: 350px;
+  overflow-y: auto;
+}
+
+.dim-card {
+  background: #2d3748;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.dual-inputs {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.dual-inputs input {
+  width: 60px;
+  padding: 6px;
+  background: #0f1218;
+  border: 1px solid #4a5568;
+  color: #10b981;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.operational-view {
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  height: 100%;
+}
+
+.logic-console {
+  background: #161b22;
+  padding: 30px;
+  border-right: 1px solid #2d3748;
+  overflow-y: auto;
+}
+
+.header-label {
+  font-size: 11px;
+  color: #94a3b8;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.logic-box {
+  background: #0f1218;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+
+.formula-display {
+  font-family: "Space Mono";
+  color: #fbbf24;
+  font-size: 13px;
+  border-bottom: 1px solid #2d3748;
+  padding-bottom: 15px;
+}
+
+.numeric-flow {
+  font-family: "Space Mono";
+  font-size: 1.2rem;
+  margin: 15px 0;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.val-a { color: #60a5fa; }
+.val-b { color: #a78bfa; }
+.val-c { color: #fb7185; }
+.val-res { color: #10b981; text-decoration: underline; }
+.sym { color: #4b5563; }
+
+.final-string {
+  background: #0f1218;
+  padding: 20px;
+  color: #fbbf24;
+  font-size: 1.2rem;
+  font-family: "Space Mono";
+  border: 1px dashed #fbbf24;
+  margin-top: 10px;
+}
+
+.data-grids {
+  padding: 30px;
+  overflow-y: auto;
+  background: #0b0e14;
+}
+
+.grid-section { margin-bottom: 50px; }
+
+.mcm-data-table {
+  border-collapse: collapse;
+  margin-top: 15px;
+  background: #1a1f29;
+}
+
+.mcm-data-table th, .mcm-data-table td {
+  border: 1px solid #2d3748;
+  padding: 12px;
+  min-width: 70px;
+  text-align: center;
+}
+
+.highlight-cell { background: #8b5cf6 !important; color: white !important; font-weight: 900; }
+.source-cell { background: #1e293b !important; color: #8b5cf6 !important; }
+.zero-cost { color: #10b981; }
+
+.empty { 
+  color: #334155; 
+  background: transparent; 
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-thumb { background: #334155; border-radius: 10px; }
